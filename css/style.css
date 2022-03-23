@@ -6,8 +6,8 @@ body{
 }
 
 #logo{
-    /* float: right; */
-    display: inline-block;
+    float: right;
+    /* display: inline-block; */
     
    
 }
@@ -15,7 +15,7 @@ li{
     color: #f1fffd;
     text-align: center;
     display: block;
-    padding: 40px 40px 0px 40px;
+    padding: 16px 32px ;
     text-decoration: none;
     cursor: default;
     text-align: left;
@@ -25,8 +25,18 @@ ul{
     background-color: #202121;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 150px;
     height: 100%;
     position: fixed;
     overflow: auto;
+}
+
+li:hover{
+    color: #e0ae1b;   
+}
+.menuLine{
+    border: 2px solid #e0ae1b;
+    width: 40%;
+    text-align: center;
+    margin: auto;
 }
