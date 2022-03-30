@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{   
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,39 +8,82 @@ body{
     margin: 0;
 }
 
-.menu{
-    text-align: top;
+/*  navigation bar  */
+
+header{
+    display: block;
 }
-.logo{
+
+#navbar-logo{
     text-align: left;
     display: inline-block;
-    
+    box-sizing: cover;
+    width: 80px;
+    padding-left: 20px;
 }
 
 ul{
-    background-color: #202121;      
+    background-color: #f1fffd;
     margin: 0;
     padding: 0;
+    top: 0;
     width: 100%;
     height: 80px;
-    position: fixed;
-    overflow: hidden;
+    position: absolute;
+    /* overflow: hidden; */
     list-style: none; 
+    justify-content: right;
 }
-a{     
-    color: #f1fffd;
+a{   
+    color: #202121;
     text-decoration: none;
-    text-align: left;
+    font-size: small;
     float: right;
-    display: block;
-    padding: 16px 32px;  
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 28px 0px 0px;
+    
 }
 
-a:hover{
+a:{
     color: #e0ae1b;   
 }
 
-h1{
-    text-align: center;
-    clear: right;
+/* initial content */
+
+section{
+    background-image: url(../images/background/background\ eraser.png);
+    /* background-size: cover; */
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.main-content{
+    text-align: left;
+    padding-left:9.5%;
+    padding-right:9.5%;
+}
+
+.button-about{
+    background: #e0af1ba3;
+    color: #202121;
+    float: left;
+    padding: 7px 25px;
+    margin: 0;
+}
+.button-about:hover{
+    background: #e0ae1b;
+    color: #202121;
+}
+
+footer{
+    background:#e0ae1b;
+    color: #f1fffd;
+    display: block;
+    text-align: center;   
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    bottom: 0;
 }
