@@ -4,7 +4,7 @@ html{
 }
 body{   
     background-color: #f1fffd;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lekton', 'Open Sans', 'Lato', 'HelveticaNeue', helvetica, arial, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -37,7 +37,6 @@ body{
     color: #202121;
     text-decoration: none;
     float: right;
-    display: inline-block;
     padding: 0px 40px;
     margin: 28px 0px 0px;
     font-size: 12px;
@@ -53,28 +52,34 @@ body{
                         /* initial content */
 
 #home{
-    background-image: url(../images/background/eraser.png);
+    /* background-image: url(../images/background/backEfectOn.jpg); */
+    /* background-attachment: fixed; */
+    background-color: #202121;
     text-decoration:none;
     list-style-type:none;
     position: relative;
-    background-size: cover;
-    background-position: center ;  
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center ;   */
+    /* background-repeat: no-repeat; */
     overflow: hidden; 
+    object-fit: cover;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     top: 80px;
+    /* opacity: .9; */
 }
 
 .main-content-home{ 
-    /* background-size: 80%;  */
-    text-align: left;
+    color: #f1fffd;
+    vertical-align: middle;
     padding-left:9.5%;
     padding-right:9.5%;
     margin-top: 80px;
     margin-bottom: 150px;
     font-size:27px;
+    transform: translate(0px, 0px, 0px);
+    opacity: 1;
 }
 
 .main-content-home h3{
@@ -95,7 +100,7 @@ body{
 .button-about:hover{
     background: #e0ae1b;
     color: #202121;
-    box-shadow: 0px 0px 8px gray;
+    box-shadow: 0px 0px 8px #e0af1b75;
     transform: scale(1.03,1.03);
 }
 
@@ -107,9 +112,7 @@ body{
 }
 
 .calidade-text-content{
-    padding-left:9.5%;
-    padding-right:9.5%;
-    /* sei lá */
+    padding:9.5%;
 }
 .calidade-text-content a{
     margin: 100%;
@@ -125,6 +128,7 @@ body{
     border-radius: 5px;
     padding: 20px;
     margin: 5px;
+    margin-left: auto;
     width:46%;
     height: 250px;
 }
@@ -133,71 +137,103 @@ body{
     font-size: 25px;
 }
 
-/* .wpb-quality-types a{
-    color: #202121;
-    text-decoration:none;
-    list-style-type:none;
-} */
+                /* construction about */
 
-/* .wpb-quality-types:hover{
-    background-color: #6582a8;
-} */
+.content-about{
+    background-color: #e0ae1b;
+    padding: 4.5% 9.5%;
+    border-radius: 50px 50px 0px 0px;
+}
 
-/* #projects
+.text-about{
+    text-align: left;
+}
 
+.text-about h1{
+    text-align: center;
 
+}
 
-
-#about */
+                /* construction footer */
 
 
 #footer{
-    background:#4a4b56;
-    color: #202121;
+    background-color: #202121;
     display: inline-block;
     text-align: center;   
     position: absolute;
     width: 100%;
-    height: 60%;
-    margin-bottom: 0;
+    height: 60%; 
+    /* border-radius: 50px 50px 0px 0px ; */
 }
 
 .footer-text{
-    color: #f1fffd;
+    color: #e0ae1b;
     margin: 50px 0px;
 }
 
-.footer-get-in-touch{
-    /* float: right; */
+.getintouch-email{
+    display: inline-block;
+    margin: auto;
     max-width: 330px;
     max-height: 200px;
     padding: 20px;
 }
 
 input, select{
-    background-color: #e0af1b30;
+    background-color: #3a4141cd;
+    color: #e0ae1b;
     box-sizing: border-box;
     border: none;
     border-radius: 5px;
     margin-bottom: 5px;
-    width: 45%;
+    width: 35%;
     height: 30px;
+}
+
+input[type="tel"]{
+    width: 71%;
+}
+
+.message{
+    /* float: right; */
+    width: 71%;
+    height: 60px;
+}
+
+::placeholder{
+    color: #e0ae1b;
+    padding: 7px;
+    opacity: 1;
+    
+}
+
+option{
+    color: #e0ae1b;
+    opacity: 1;
+    
 }
 
 .send-info{
     background-color: #e0ae1b;
+    color: #202121;
     text-align: center;
     border-radius: 10px;
-    width: 60px;
+    width: 80px;
     height: 30px;
 }
 
 .send-info:hover{
-    background-color: #678acd;
+    /* background-color: #e0ae1b;
+    color: #202121; */
+    box-shadow: 0px 0px 8px #e0af1b75;
     transform: scale(1.03,1.03);
 }
 
-/* .footer-social-networks-images a{
+.footer-social-networks{
+    display: inline-block;
+}
+.footer-social-networks-images a{
     color: #202121;
     text-decoration: none;
     float: right;
@@ -205,33 +241,26 @@ input, select{
     margin: 28px 0px 0px;
     transition-duration: .3s;
     transition-property: transform;
-} */
+}
 
-/* .social-icon{
+.social-icon{
+    padding: 6px;
     text-decoration:none;
     list-style-type:none;
 }
 
-.social-icon a:hover{
+.social-icon i{
+    text-decoration:none;
+    list-style-type:none;
+}
+
+.social-icon a, i:hover{
     transform: scale(1.1,1.1);
 }
 
-.instagram{
-    width: 19px;
+.socialnetworks{
+    width: 30px;
 }
-
-.whatsapp{
-    width: 19px;
-}
-
-.email{
-    width: 25px;
-} */
-
-/* .divider{
-    height: 20px;
-} */
-
                        /* whatsapp button */
 
 .fixed-button-whatsapp{
@@ -264,5 +293,5 @@ input, select{
 }
 
 .divider{
-    height: 100px;
+    height: 70px;
 }
