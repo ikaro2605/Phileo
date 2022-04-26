@@ -7,63 +7,68 @@
     <link rel="icon" href="./images/icon.svg" type="image/svg">
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <title>Phileo - Reformas e Construcciones</title>
 </head>
 
-<body>
+<body>        
+
     <div class="container">
 
-        <!-- initial content -->
-        
+            <!-- navigation bar -->
+
+            <div class="topnav" id="myTopnav">
+
+                <div class="active">
+                    <a href="#home"><img src="./images/logo.jpg" alt=""></a>
+                </div>
+                        
+                <a href="#footer">CONTACTO</a>
+                <a href="#about">COMO FUNCIONA</a>
+                <a href="#qualities">CALIDADES</a>
+                <a href="https://www.instagram.com/phileo_construcciones/" target="_blank">PROYECTOS</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+                
+        <script>
+            function myFunction(){
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
+                <!-- buttons right for social webs -->
+
+        <a id="send-message-whatsapp" class="message-whatsapp" href="https://wa.me/+34635259406" target="_blank" style="display: block;">
+            <i style="font-size:30px;" class="fa">&#xf232;</i>
+        </a>
+
+        <a id="send-message-instagram" class="message-instagram" href="https://www.instagram.com/phileo_construcciones/" target="_blank" style="display: block;">
+            <i style="font-size: 30px;" class="fa">&#xf16d;</i>
+        </a>
+
         <section id="home">
 
-            <div class="divider" height="20px"></div>
-                    
-                <div class="main-content-home">
-                    <h1>Construyendo el Futuro</h1>
-                    <h3>Te presentamos el futuro de la construcción, arquitectura y diseño. Conozca el sistema constructivo más rápido y barato que el modo convencional!</h3>
+                    <div class="main-content-home">
+                        <h1>Construyendo el Futuro</h1>
+                        <h3>Te presentamos el futuro de la construcción, arquitectura y diseño. Conozca el sistema constructivo más rápido y barato que el modo convencional!</h3>
 
-                    <br>
+                        <br>
 
-                    <a href="#about" class="button-about">Sepa mas!</a>
-                </div>          
-            </div>
-                    
-                </section>        
-
-        <!-- navigation bar -->
-        
-        <header>
-
-            <ul id="navbar">
-
-                <img id="navbar-logo" alt="Phileo" src="./images/logo.jpg">
-
-                <a></a>
-                <a href="#footer"><li>CONTACTO</li></a>
-                <a href="#about"><li>SOBRE</li></a>
-                <a href="#qualities"><li>CALIDADES</li></a>
-                <!-- <a href="#projects"><li>PROYECTOS</li></a> -->
-                <a href="#home"><li>HOME</li></a>              
-                    <br> 
-            </ul>                    
-                                                               
-        </header> 
-
-        <!-- <div class="divider"></div>
-        <div class="divider"></div>
-
-        <section id="projects">
-            <div class="content-projects">
-
-                <h3>Phileo Construcciones SL se encarga del diseño, del desarrollo integral, así como de la ejecución y el montaje de cada casa prefabricada adaptada al 100% a las necesidades del cliente y cumpliendo con el Código Técnico de la Edificación.Con nuestro sistema constructivo flexible basado en paneles de Steel Framing, nosotros siempre estamos en la búsqueda de un mejor acoplamiento de sus necesidades y grado de acabados que necesites. (C.T.E).</h3>
+                        <a href="#about" class="button-about">Sepa mas!</a>
+                    </div>      
                 
             </div>
-        </section> -->
+                    
+        </section>        
 
-        <!-- <div class="divider"></div> -->
-        
         <section id="qualities">
 
             <div class="divider"></div>
@@ -75,7 +80,7 @@
 
             <div class="container-calidades">
 
-                <div class="wpb-calidades-types">
+                <div class="wpb-calidades-types" style="background-image: url(./images/background/back1.jpg);">
                     <div class="column-inner">
                             <div class="text-box">
                                 <h3>Standart</h3>
@@ -85,7 +90,7 @@
                                       
                 </div>
 
-                <div class="wpb-calidades-types">
+                <div class="wpb-calidades-types" style="background-image: url(./images/background/back2.jpg);">
                     <div class="column-inner">
                             <div class="text-box">
                                 <h3>Excellent Premium</h3>
@@ -95,7 +100,7 @@
                     
                 </div>
 
-                <div class="wpb-calidades-types">
+                <div class="wpb-calidades-types" style="background-image: url(./images/background/back3.jpg);">
                     <div class="column-inner">
                             <div class="text-box">
                                 <h3>Premium Eco</h3>
@@ -105,7 +110,7 @@
                     
                 </div>
 
-                <div class="wpb-calidades-types">
+                <div class="wpb-calidades-types" style="background-color: #202121;">
                     <div class="column-inner">
                             <div class="text-box">
                                 <h3>Personalizada</h3>
@@ -129,102 +134,41 @@
 
                     <h1>COMO FUNCIONA</h1>
                         <br><br>
-                    <h3>Phileo Construcciones SL se encarga del diseño, del desarrollo integral, así como de la ejecución y el montaje de cada casa prefabricada adaptada al 100% a las necesidades del cliente y cumpliendo con el Código Técnico de la Edificación.Con nuestro sistema constructivo flexible basado en paneles de Steel Framing, nosotros siempre estamos en la búsqueda de un mejor acoplamiento de sus necesidades y grado de acabados que necesites. (C.T.E).</h3>
+                    <h3>con el sistema basado en steel framing, nuestros proyectos se adaptan al 100% para garantizar el confort y las necesidades del cliente y cumplir con el código técnico de la edificación (C.T.E).</h3>
 
                     <h4>vantagens steel framing:</h4>
-                    <p>Las viviendas prefabricadas de Steel Framing se basan en un sistema constructivo fuera de lo convencional, ofreciendo un equilibrio justo entre calidad y economía.
-                    Steel Framing: Un sistema ágil, versátil, liviano y flexible basado en un entramado de paneles compuestos por perfiles de acero galvanizado, altamente resistente y hermético.</p>
+                    <p>Un sistema ágil, versátil, liviano y flexible basado en un entramado de paneles compuestos por perfiles de acero galvanizado, altamente resistente y hermético.</p>
                 </div>
             </div>
         </section>
 
-        <!-- <div class="fixed-button-whatsapp">
-            <a href="#home" class="fixed-icon">
+        <section id="footer">
 
-                    <img class="image-button" src="./images/media_social/whatsapp.png">
-                    
-            </a>
-        </div> -->
-
-        <div id="footer">
-                <!-- <hr> -->
             <div class="footer-text">
                 <h2>ENTRE EN CONTACTO</h2>
             </div>
             
-            <div class="footer-contacts-contents">
-                <h4></h4>
-                <h4></h4>
-                <h4></h4>
-
-            </div>
-            <div class="getintouch-email">
-
+            <div class="position-of-contents">
+                <div class="getintouch-email">
                 <form method="post">
                     <input type="text" placeholder="Name" name="FNAME">
-                    <input type="email" placeholder="Email" name="EMAIL">
                     <input type="tel" placeholder="Phone" name="PHONE">
+                    <input type="email" placeholder="Email" name="EMAIL">
                     <input class="message" type="text" placeholder="Message" name="FNAME">
             
                         <br><br>
 
                     <a><input class="send-info" type="submit" value="Send"></a>
                 </form>
+                </div> 
 
-                <!-- <div class="footer-social-networks">
-                    <div class="footer-link-socialnetworks-images">
-                        <ul>
-                            <li class="social-icon">
+            </div>
 
-                                <a href="tel:+34635259406" target="_blank">
-                                    <p>
-                                        
-                                    </p>
-                                </a>
-        
-                                <a href="https://www.instagram.com/phileo_construcciones/" target="_blank">
-                                    <p>
-                                       Instagram
-                                    </p>
-                                </a>
-                            </li>
-        
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-
-        </div>
+        </section>
         
     </div>
 
 </body>
-
-<!-- <div class="footer-social-networks-images">
-                 <ul>
-                    <li class="social-icon">
-
-                        <a href="mailto:phileo.info@gmail.com" target="_blank">
-                            <i>
-                                <img class="email" src="./images/media_social/email.png">
-                            </i>
-                        </a>
-
-                        <a href="tel:+34635259406" target="_blank">
-                            <i>
-                                <img class="whatsapp" src="./images/media_social/tel.png">
-                            </i>
-                        </a>
-
-                        <a href="https://www.instagram.com/phileo_construcciones/" target="_blank">
-                            <i>
-                               <img class="instagram" src="./images/media_social/instagram.png">
-                            </i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div> -->
 
 <!-- Enamórate del método de construcción en seco más rápido, sustentable y económico del mercado.
 
