@@ -179,6 +179,7 @@ display: none;
 .calidade-text-content{
     font-size: 1.2rem;
     padding:9.5%;
+    padding-bottom: 0;
 }
 .calidade-text-content h1{
     color: #073269;
@@ -190,6 +191,9 @@ display: none;
 } */
 
 .container-calidades{
+    display: inline-block;
+    max-width: 1000px;
+    max-height: 1000px;
     padding: 30px;
 }
 
@@ -199,11 +203,12 @@ display: none;
     background-size: cover;
     background-position: center ;  
     background-repeat: no-repeat;
+    float: left;
     border-radius: 5px;
     padding: 20px;
     margin: 5px;
     width:40%;
-    height: 250px;
+    height: 45%;
 }
 .wpb-calidades-types h3{
     margin: 0px 0px 19px;
@@ -335,6 +340,11 @@ option{
         display: block;
         text-align: left;
         }
+    }
+
+    @media screen and (max-height: 500px) {
+        .topnav{position: static;}
+        .topnav.responsive {position: absolute;}
     }
 
     @media screen and (max-width: 600px){
