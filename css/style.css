@@ -1,21 +1,29 @@
 html{
     scroll-behavior: smooth;
-    
+    scroll-margin: 145px;
+    /* overflow-x: hidden; */
 }
 body{   
     background-color: #f1fffd;
     font-family: 'Lekton', 'Open Sans', 'Lato', 'HelveticaNeue', helvetica, arial, sans-serif;
+    position: relative;
     padding: 0;
     margin: 0;
 }
 
 body ::selection{
-    background-color: #e0ae1b;
+    background-color: #D92365;
 }
 
 a{
+    list-style-type:none;
     text-decoration: none;
     display: inline-block;
+}
+
+::placeholder{
+    color: #e0ae1b;
+    padding: 7px;
 }
 
 .topnav{
@@ -26,7 +34,7 @@ a{
     position: fixed;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     width: 100%;
     top: 0;
 }
@@ -35,9 +43,9 @@ a{
     color: #202121;
     float: right;
     /* text-align: left; */
-    padding: 10px 40px;
-    margin: 28px 0px 28px 0px;
-    font-size: 0.8em;
+    padding: 0 40px;
+    margin-top: 33.7px;
+    font-size: 0.97rem;
     
 }
                           
@@ -60,50 +68,42 @@ a{
 }
 
 .topnav .icon {
-display: none;
+    display: none;
+    font-size: 20px;
 }
+
+
 
                         /* initial content */
 
 #home{
-    background-image: url(../images/background/backEfectOn.jpg);
-    background-attachment: fixed;
-    background-color: #202121;
     text-decoration:none;
     list-style-type:none;
-    /* position: relative; */
-    background-size: cover;
-    background-position: center ;  
-    background-repeat: no-repeat;
-    overflow: hidden; 
+    margin-top: 110px;
     object-fit: cover;
     box-sizing: border-box;
-    padding-top: 80px;
-    width: 100%;
-    height: 100%;
-    top: 80px;
-    /* opacity: .9; */
 }
 
 .main-content-home{ 
-    color: #f1fffd;
-    vertical-align: middle;
-    padding-left:9.5%;
-    padding-right:9.5%;
-    margin: 10% 0px;
-    font-size:1.7rem;
+    background-color: #202121;
+    color: #97a19f;
+    vertical-align: auto;
+    font-size: 2.8rem;
+    padding: 10% 9.5%;
+    min-width: 325px;
     transform: translate(0px, 0px, 0px);
     opacity: 1;
 }
 
 .main-content-home h3{
+    
     font-size: 25px;
 }
 
 .button-about{
-    background: #e0af1ba3;
+    background-color: #e0af1b75;
+    border: 10px;
     color: #202121;
-    position: static;
     list-style-type:none;
     border-radius: 3px;
     font-size: 15px;
@@ -117,6 +117,174 @@ display: none;
     color: #202121;
     box-shadow: 0px 0px 8px #e0af1b75;
     transform: scale(1.03,1.03);
+}
+
+#speciality{
+    display: inline-block;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.title-speciality{
+    background-color: #0f2d69;
+    display: inline-block;
+    text-align: left;
+    width: 250px;
+    padding-left: 60px;
+}
+
+.container-speciality{
+    background-color: red;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+
+                /* construction quality */
+
+#qualities{
+    display: inline-block;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.calidade-text-content{
+    font-size: 1.2rem;
+    padding:9.5%;
+    padding-top: 6%;
+    padding-bottom: 0;
+}
+
+.calidade-text-content h1{
+    color: #e0ae1b;
+}
+
+.container-calidades{
+    text-align: center;
+    margin-top: 35px;
+    padding: 20px;
+    max-width: 4000px;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.calidades-types{
+    background-color: #202121;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 7px;
+    min-width: 200px;
+    width: 40%;
+    min-height: 300px;
+    height: 400px;
+}
+
+.column-inner{
+    background-color: #e0af1b44;
+}
+
+.column-inner h3{
+    color: #202121;
+    margin: 0px 0px 19px;
+    font-size: 1.6rem;
+    margin: 10px;
+    padding: 15px;
+}
+
+                /* construction about */
+
+.content-about{
+    background-image: url(../images/background/steel-frame-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.about-box{
+    background-color: #e0ae1b;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+}
+
+.text-about{
+    color: #202121;
+    text-align: left;
+}
+
+                /* construction footer */
+
+
+#footer{
+    background-color: #202121;
+    text-align: center;   
+    margin: 0;
+    width: 100%;
+    max-height: 100%; 
+}
+
+.footer-text {
+    color: #e0ae1b;
+    margin: 50px 0px;
+}
+
+.position-of-contents{
+    display: inline-block;
+}
+
+.getintouch-email{
+    width: 430px;
+    /* height: 00px; */
+    padding: 20px;
+}
+
+input, select{
+    background-color: #3a4141cd;
+    color: #e0ae1b;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 71%;
+    height: 40px;
+}
+
+.message{
+    overflow-x: auto;
+    width: 71%;
+    height: 65px;
+}
+
+option{
+    color: #e0ae1b;
+    opacity: 1; 
+}
+
+.send-info{
+    background-color: #e0ae1b;
+    color: #202121;
+    /* text-align: center; */
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.send-info:hover{
+    background-color: #e0ae1b;
+    color: #202121;
+    box-shadow: 0px 0px 8px #e0af1b75;
+}
+
+.lefttext-info-contacts{
+    color: #e0ae1b;
+    float: left;
+    margin: 10px 10px;
 }
 
 #send-message-instagram{
@@ -169,189 +337,39 @@ display: none;
     content: "&#xf16d;";
 }
 
-                /* construction quality */
 
-#qualities{
-    display: inline-block;
-    /* text-align: left; */
-}
-
-.calidade-text-content{
-    font-size: 1.2rem;
-    padding:9.5%;
-    padding-bottom: 0;
-}
-.calidade-text-content h1{
-    color: #073269;
-}
-
-
-/* .calidade-text-content a{
-    margin: 100%;
-} */
-
-.container-calidades{
-    display: inline-block;
-    max-width: 1000px;
-    max-height: 1000px;
-    padding: 30px;
-}
-
-.wpb-calidades-types{
-    /* display: inline-block; */
-    color: #e0ae1b;
-    background-size: cover;
-    background-position: center ;  
-    background-repeat: no-repeat;
-    float: left;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 5px;
-    width:40%;
-    height: 45%;
-}
-.wpb-calidades-types h3{
-    margin: 0px 0px 19px;
-    font-size: 1.6rem;
-
-}
-
-                /* construction about */
-
-.content-about{
-    background-color: #e0ae1b;
-    padding: 4.5% 9.5%;
-    /* border-radius: 50px 50px 0px 0px; */
-}
-
-.text-about{
-    text-align: left;
-}
-
-.text-about h1{
-    text-align: center;
-
-}
-
-                /* construction footer */
-
-
-#footer{
-    background-color: #202121;
-    text-align: center;   
-    margin: 0;
-    width: 100%;
-    max-height: 100%; 
-}
-
-.footer-text h2{
-    color: #e0ae1b;
-    display: inline-block;
-    margin: 50px 0px;
-}
-
-.position-of-contents{
-    display: inline-block;
-}
-
-.getintouch-email{
-    /* float: right; */
-    max-width: 330px;
-    max-height: 200px;
-    padding: 20px;
-    margin-right: auto;
-}
-
-input, select{
-    background-color: #3a4141cd;
-    color: #f1fffd;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    width: 35%;
-    height: 30px;
-}
-
-input[type="email"]{
-    width: 71%;
-}
-
-.message{
-    overflow-x: auto;
-    width: 71%;
-    height: 60px;
-}
-
-::placeholder{
-    color: #e0ae1b;
-    padding: 7px;
-    opacity: 1;
-}
-
-option{
-    color: #e0ae1b;
-    opacity: 1; 
-}
-
-.send-info{
-    background-color: #3a4141cd;
-    color: #e0ae1b;
-    text-align: center;
-    border-radius: 10px;
-    width: 80px;
-    height: 30px;
-}
-
-.send-info:hover{
-    background-color: #e0ae1b;
-    color: #202121;
-    box-shadow: 0px 0px 8px #e0af1b75;
-    transform: scale(1.03,1.03);
-}
-
-.lefttext-info-contacts{
-    color: #e0ae1b;
-    float: left;
-    margin: 10px 10px;
-}
                           /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 915px) {
         .topnav a:not(:first-child) {display: none;}
+        
         .topnav a.icon {
         float: right;
         display: block;
         }
+
         .initial-img{
             height: 100%;
         }
-}
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (max-width: 800px) {
+        
         .topnav.responsive {position: fixed;}
         .topnav.responsive a.icon {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 20px;
+        top: 18px;
         }
         .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        clear: left ;
+        margin-bottom: 5px;
         }
     }
-
-    @media screen and (max-height: 500px) {
-        .topnav{position: static;}
-        .topnav.responsive {position: absolute;}
-    }
-
-    @media screen and (max-width: 600px){
+  
+ @media screen and (max-width: 600px){
 
         .wpb-calidades-types{
             float: left;
-            /* width: 30%; */
+            min-width: 40%;
             height: 250px;
         }
     }
@@ -367,6 +385,12 @@ option{
         }
     }
 
+    @media screen and (max-height: 500px) {
+        .topnav{position: static;}
+        .topnav.responsive {position: absolute;}
+    }
+
+    
 
 .divider{
     height: 70px;
